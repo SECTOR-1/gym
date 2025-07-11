@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוכנית אימון</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .exercise-icon {
+            width: 100%;
+            height: 300px;  /* הגדלתי את הגובה כדי להתאים לתמונות */
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            overflow: hidden;  /* למנוע גלישת תמונות */
+        }
+
+        .exercise-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* לשמור על יחס התמונה */
+            border-radius: 4px;
+        }
+
+        .exercise-icon .icon-text {
+            text-align: center;
+            color: #1a73e8;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .muscle-group {
+            color: #5f6368;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .sets-reps {
+            background-color: #e3f2fd;
+            color: #1565c0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>תוכנית אימון שבועית</h1>
+    </header>
+    
+    <main>
+        <section class="workout-day" id="day1">
+            <h2>יום 1: חזה, כתפיים, טרייספס (Upper A)</h2>
+            <div class="exercises">
+                <div class="exercise-card">
+                    <h3>לחיצת חזה (Bench Press)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_20 PM.png" alt="לחיצת חזה">
+                        <div class="icon-text">לחיצת חזה</div>
+                        <div class="muscle-group">חזה | כתפיים | טרייספס</div>
+                    </div>
+                    <div class="sets-reps">4 סטים × 8-10 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">חזה</span>
+                        <span class="focus-area">כתפיים קדמיות</span>
+                        <span class="focus-area">טרייספס</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: שכיבה על ספסל שטוח, רגליים יציבות על הרצפה</p>
+                        <p class="movement">תנועה: הורדת המוט לכיוון החזה והרמתו חזרה למעלה</p>
+                        <p>המוט נע בקשת טבעית מעל החזה העליון</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שכב על ספסל שטוח עם הגב צמוד</li>
+                            <li>אחוז במוט ברוחב גדול מעט מרוחב הכתפיים</li>
+                            <li>הורד את המוט לכיוון החזה באופן מבוקר</li>
+                            <li>דחוף את המוט חזרה למעלה</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על מרפקים בזווית של 45 מעלות</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>לחיצת חזה עם משקוליות בשיפוע (Incline Dumbbell Press)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_22 PM.png" alt="לחיצת חזה בשיפוע">
+                        <div class="icon-text">לחיצת חזה בשיפוע</div>
+                        <div class="muscle-group">חזה עליון | כתפיים | טרייספס</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 8-12 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">חזה עליון</span>
+                        <span class="focus-area">כתפיים קדמיות</span>
+                        <span class="focus-area">טרייספס</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: שכיבה על ספסל בשיפוע של 30-45 מעלות</p>
+                        <p class="movement">תנועה: הרמת משקוליות מגובה הכתפיים כלפי מעלה</p>
+                        <p>המשקוליות נעות במסלול קשתי קל</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שכב על ספסל בשיפוע של 30-45 מעלות</li>
+                            <li>החזק משקולות בגובה הכתפיים</li>
+                            <li>דחוף את המשקולות למעלה עד ליישור המרפקים</li>
+                            <li>הורד באיטיות חזרה למצב התחלתי</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על יציבות בכתפיים</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>לחיצת כתפיים עם משקוליות (Shoulder Press)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_23 PM.png" alt="לחיצת כתפיים">
+                        <div class="icon-text">לחיצת כתפיים</div>
+                        <div class="muscle-group">דלתא | טרייספס</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 8-12 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">דלתא</span>
+                        <span class="focus-area">טרייספס</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: ישיבה זקופה עם משענת גב</p>
+                        <p class="movement">תנועה: דחיפת משקוליות מגובה האוזניים כלפי מעלה</p>
+                        <p>המשקוליות נעות בקו ישר כלפי מעלה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שב זקוף עם משענת גב או עמוד</li>
+                            <li>החזק משקולות בגובה האוזניים</li>
+                            <li>דחוף את המשקולות ישר למעלה</li>
+                            <li>הורד בשליטה למצב התחלתי</li>
+                        </ol>
+                        <p class="tips">טיפ: הימנע מקשת בגב התחתון</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>פרפר משקוליות (Dumbbell Flyes)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_25 PM.png" alt="פרפר משקוליות">
+                        <div class="icon-text">פרפר משקוליות</div>
+                        <div class="muscle-group">חזה | כתפיים קדמיות</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 10-15 חזרות</div>
+                    <span class="difficulty advanced">רמת קושי: מתקדם</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">חזה</span>
+                        <span class="focus-area">כתפיים קדמיות</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: שכיבה על ספסל שטוח עם ידיים פרושות לצדדים</p>
+                        <p class="movement">תנועה: הרמת משקוליות בתנועת קשת עד למפגש מעל החזה</p>
+                        <p>הידיים נשארות כמעט ישרות לאורך כל התנועה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שכב על ספסל שטוח</li>
+                            <li>החזק משקולות עם ידיים ישרות מעל החזה</li>
+                            <li>הורד את הידיים לצדדים בתנועת קשת</li>
+                            <li>החזר בתנועת סגירה לנקודת ההתחלה</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על כיפוף קל במרפקים</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>פשיטת מרפקים בחבל (Triceps Pushdown)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_27 PM.png" alt="פשיטת מרפקים">
+                        <div class="icon-text">פשיטת מרפקים</div>
+                        <div class="muscle-group">טרייספס</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 10-15 חזרות</div>
+                    <span class="difficulty beginner">רמת קושי: מתחיל</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">טרייספס</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה מול מכונת כבל, אחיזה בחבל בגובה החזה</p>
+                        <p class="movement">תנועה: דחיפת החבל כלפי מטה עד ליישור מלא של המרפקים</p>
+                        <p>המרפקים נשארים צמודים לצידי הגוף</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד מול מכונת כבל עם חבל</li>
+                            <li>אחוז בחבל עם שתי ידיים</li>
+                            <li>דחוף את החבל כלפי מטה עד ליישור המרפקים</li>
+                            <li>החזר באיטיות למצב התחלתי</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על מרפקים צמודים לגוף</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-day" id="day2">
+            <h2>יום 2: רגליים וישבן (Lower A)</h2>
+            <div class="exercises">
+                <div class="exercise-card">
+                    <h3>סקוואט (Squat)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_31 PM.png" alt="סקוואט">
+                        <div class="icon-text">סקוואט</div>
+                        <div class="muscle-group">ירכיים | ישבן | ליבה</div>
+                    </div>
+                    <div class="sets-reps">4 סטים × 8-10 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">ירכיים</span>
+                        <span class="focus-area">ישבן</span>
+                        <span class="focus-area">ליבה</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה עם רגליים ברוחב הכתפיים, מוט על הטרפז</p>
+                        <p class="movement">תנועה: כפיפה בברכיים וירידה עד שהירכיים מקבילות לרצפה</p>
+                        <p>הגב נשאר ישר והחזה זקוף לאורך כל התנועה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד עם רגליים ברוחב הכתפיים</li>
+                            <li>הנח את המוט על הטרפז העליון</li>
+                            <li>רד למטה עד שהירכיים מקבילות לרצפה</li>
+                            <li>דחוף חזרה למעלה דרך העקבים</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על גב ישר וחזה זקוף</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>לאנג׳ הליכה (Walking Lunges)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_32 PM.png" alt="לאנג׳ הליכה">
+                        <div class="icon-text">לאנג׳ הליכה</div>
+                        <div class="muscle-group">ירכיים | ישבן | שיווי משקל</div>
+                    </div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">ירכיים</span>
+                        <span class="focus-area">ישבן</span>
+                        <span class="focus-area">שיווי משקל</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה זקופה עם משקוליות בצידי הגוף</p>
+                        <p class="movement">תנועה: צעידה קדימה תוך כפיפת ברכיים לזווית של 90 מעלות</p>
+                        <p>הגוף נשאר זקוף והמבט קדימה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>צעד קדימה עם רגל אחת</li>
+                            <li>כופף את שתי הברכיים ל-90 מעלות</li>
+                            <li>דחוף חזרה למעלה</li>
+                            <li>המשך עם הרגל השנייה</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על יציבות בכל צעד</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>דדליפט (Deadlift)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_34 PM.png" alt="דדליפט">
+                        <div class="icon-text">דדליפט</div>
+                        <div class="muscle-group">גב תחתון | ישבן | ירכיים אחוריות</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 8-12 חזרות</div>
+                    <span class="difficulty advanced">רמת קושי: מתקדם</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">גב תחתון</span>
+                        <span class="focus-area">ישבן</span>
+                        <span class="focus-area">ירכיים אחוריות</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה מאחורי המוט, רגליים ברוחב הכתפיים</p>
+                        <p class="movement">תנועה: הרמת המוט מהרצפה תוך יישור הגב והרגליים</p>
+                        <p>הגב נשאר ישר והמוט קרוב לרגליים לאורך כל התנועה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד מאחורי המוט עם רגליים ברוחב הכתפיים</li>
+                            <li>כופף את הברכיים ואחוז במוט</li>
+                            <li>הרם את המוט תוך יישור הגב והרגליים</li>
+                            <li>הורד חזרה באיטיות</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על גב ישר לאורך כל התנועה</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>הרמת עקבים (Calf Raises)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_35 PM.png" alt="הרמת עקבים">
+                        <div class="icon-text">הרמת עקבים</div>
+                        <div class="muscle-group">שרירי השוק</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 15-20 חזרות</div>
+                    <span class="difficulty beginner">רמת קושי: מתחיל</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">שרירי השוק</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה על קצה מדרגה עם העקבים באוויר</p>
+                        <p class="movement">תנועה: הרמת העקבים כלפי מעלה והורדתם מתחת לקו המדרגה</p>
+                        <p>התנועה מתבצעת בטווח מלא</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד על קצה מדרגה</li>
+                            <li>הורד את העקבים מתחת לקו המדרגה</li>
+                            <li>התרומם על קצות האצבעות</li>
+                            <li>חזור למצב התחלתי</li>
+                        </ol>
+                        <p class="tips">טיפ: בצע את התרגיל בטווח תנועה מלא</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-day" id="day3">
+            <h2>יום 3: גב, כתפיים אחוריות, בייספס (Upper B)</h2>
+            <div class="exercises">
+                <div class="exercise-card">
+                    <h3>מתח (Pull-ups)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_42 PM.png" alt="מתח">
+                        <div class="icon-text">מתח</div>
+                        <div class="muscle-group">גב עליון | בייספס | כתפיים אחוריות</div>
+                    </div>
+                    <div class="sets-reps">4 סטים × 6-10 חזרות</div>
+                    <span class="difficulty advanced">רמת קושי: מתקדם</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">גב עליון</span>
+                        <span class="focus-area">בייספס</span>
+                        <span class="focus-area">כתפיים אחוריות</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: תלייה על מוט עם אחיזה רחבה</p>
+                        <p class="movement">תנועה: משיכת הגוף כלפי מעלה עד שהסנטר מעל המוט</p>
+                        <p>הכתפיים נמשכות לאחור והחזה מתקרב למוט</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>אחוז במוט עם אחיזה רחבה</li>
+                            <li>משוך את עצמך למעלה עד שהסנטר מעל המוט</li>
+                            <li>הורד את עצמך באיטיות למטה</li>
+                            <li>חזור על התנועה</li>
+                        </ol>
+                        <p class="tips">טיפ: התמקד במשיכה עם שרירי הגב</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>חתירה בכבל יושב (Seated Cable Row)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/Capture.JPG" alt="חתירה בכבל">
+                        <div class="icon-text">חתירה בכבל</div>
+                        <div class="muscle-group">גב תחתון | שכמות | בייספס</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 8-12 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">גב תחתון</span>
+                        <span class="focus-area">שכמות</span>
+                        <span class="focus-area">בייספס</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: ישיבה מול מכונת כבלים עם רגליים כפופות</p>
+                        <p class="movement">תנועה: משיכת הידית לכיוון הבטן תוך כיווץ השכמות</p>
+                        <p>הגב נשאר ישר והחזה זקוף</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שב מול מכונת הכבלים עם רגליים כפופות</li>
+                            <li>אחוז בידית ומשוך לכיוון הבטן</li>
+                            <li>שמור על גב ישר</li>
+                            <li>החזר באיטיות למצב התחלתי</li>
+                        </ol>
+                        <p class="tips">טיפ: כווץ את השכמות בסוף התנועה</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>פטישים (Hammer Curls)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_46 PM.png" alt="פטישים">
+                        <div class="icon-text">פטישים</div>
+                        <div class="muscle-group">בייספס | שרירי האמה</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 10-15 חזרות</div>
+                    <span class="difficulty beginner">רמת קושי: מתחיל</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">בייספס</span>
+                        <span class="focus-area">שרירי האמה</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה עם משקולות בצידי הגוף</p>
+                        <p class="movement">תנועה: כפיפת מרפקים עם אחיזת פטיש</p>
+                        <p>המרפקים נשארים צמודים לגוף</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד עם משקולות בצידי הגוף</li>
+                            <li>הרם את המשקולות בתנועת פטיש</li>
+                            <li>הורד באיטיות חזרה</li>
+                            <li>שמור על מרפקים צמודים לגוף</li>
+                        </ol>
+                        <p class="tips">טיפ: הימנע מתנועות נדנוד</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>הרחקת כתפיים (Lateral Raises)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_38 PM.png" alt="הרחקת כתפיים">
+                        <div class="icon-text">הרחקת כתפיים</div>
+                        <div class="muscle-group">דלתא צידית | מייצבי כתף</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 12-15 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">דלתא צידית</span>
+                        <span class="focus-area">מייצבי כתף</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידה עם משקוליות בצידי הגוף</p>
+                        <p class="movement">תנועה: הרמת הידיים לצדדים עד גובה הכתפיים</p>
+                        <p>המרפקים נשארים בכיפוף קל</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>עמוד עם משקולות בצידי הגוף</li>
+                            <li>הרם את הידיים לצדדים עד גובה הכתפיים</li>
+                            <li>הורד באיטיות חזרה</li>
+                            <li>שמור על מרפקים כפופים קלות</li>
+                        </ol>
+                        <p class="tips">טיפ: הימנע מתנועות נדנוד</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-day" id="day4">
+            <h2>יום 4: רגליים וליבה (Lower B)</h2>
+            <div class="exercises">
+                <div class="exercise-card">
+                    <h3>לחיצת רגליים (Leg Press)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_38_32 PM.png" alt="לחיצת רגליים">
+                        <div class="icon-text">לחיצת רגליים</div>
+                        <div class="muscle-group">ירכיים | ישבן</div>
+                    </div>
+                    <div class="sets-reps">4 סטים × 6-8 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">ירכיים</span>
+                        <span class="focus-area">ישבן</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: ישיבה במכונת לחיצת רגליים, רגליים על הפלטפורמה</p>
+                        <p class="movement">תנועה: דחיפת הפלטפורמה כלפי מעלה ויישור הרגליים</p>
+                        <p>הגב צמוד למשענת לאורך כל התנועה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שב במכונה עם גב צמוד למשענת</li>
+                            <li>הנח רגליים על הפלטפורמה ברוחב הכתפיים</li>
+                            <li>הורד את המשקל עד שהברכיים מגיעות לחזה</li>
+                            <li>דחוף חזרה למעלה</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על גב צמוד למשענת</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>כפיפות בטן (Crunches)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 07_53_58 PM.png" alt="כפיפות בטן">
+                        <div class="icon-text">כפיפות בטן</div>
+                        <div class="muscle-group">שרירי בטן עליונים | ליבה</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 15-20 חזרות</div>
+                    <span class="difficulty beginner">רמת קושי: מתחיל</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">שרירי בטן עליונים</span>
+                        <span class="focus-area">ליבה</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: שכיבה על הגב עם ברכיים כפופות</p>
+                        <p class="movement">תנועה: הרמת הכתפיים מהרצפה תוך כיווץ שרירי הבטן</p>
+                        <p>הגב התחתון נשאר צמוד לרצפה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שכב על הגב עם ברכיים כפופות</li>
+                            <li>הנח ידיים מאחורי הראש</li>
+                            <li>הרם את הכתפיים מהרצפה</li>
+                            <li>הורד באיטיות חזרה</li>
+                        </ol>
+                        <p class="tips">טיפ: התמקד בכיווץ שרירי הבטן</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>הרמת אגן (Hip Thrust)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/Capture2.JPG" alt="הרמת אגן">
+                        <div class="icon-text">הרמת אגן</div>
+                        <div class="muscle-group">ישבן | ירכיים אחוריות</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 10-12 חזרות</div>
+                    <span class="difficulty intermediate">רמת קושי: בינוני</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">ישבן</span>
+                        <span class="focus-area">ירכיים אחוריות</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: ישיבה על הרצפה עם גב על ספסל</p>
+                        <p class="movement">תנועה: הרמת האגן כלפי מעלה עד ליצירת קו ישר מהברכיים לכתפיים</p>
+                        <p>כיווץ שרירי הישבן בנקודה העליונה</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>שב על הרצפה עם גב נשען על ספסל</li>
+                            <li>הנח משקל על האגן</li>
+                            <li>הרם את האגן עד ליצירת קו ישר</li>
+                            <li>הורד באיטיות חזרה</li>
+                        </ol>
+                        <p class="tips">טיפ: כווץ את הישבן בחלק העליון של התנועה</p>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <h3>פלאנק (Plank)</h3>
+                    <div class="exercise-icon">
+                        <img src="images/ChatGPT Image Jul 11, 2025, 08_08_02 PM.png" alt="פלאנק">
+                        <div class="icon-text">פלאנק</div>
+                        <div class="muscle-group">ליבה | כתפיים | יציבה</div>
+                    </div>
+                    <div class="sets-reps">3 סטים × 30-45 שניות</div>
+                    <span class="difficulty beginner">רמת קושי: מתחיל</span>
+                    <div class="focus-areas">
+                        <span class="focus-area">ליבה</span>
+                        <span class="focus-area">כתפיים</span>
+                        <span class="focus-area">יציבה</span>
+                    </div>
+                    <div class="exercise-visual">
+                        <h4>תיאור חזותי</h4>
+                        <p class="position">תנוחת מוצא: עמידת שש על האמות</p>
+                        <p class="movement">תנועה: החזקת הגוף בקו ישר</p>
+                        <p>הגוף יוצר קו ישר מהראש עד העקבים</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>הוראות ביצוע:</h4>
+                        <ol>
+                            <li>התמקם בעמידת שש על האמות</li>
+                            <li>יישר את הגוף לקו אחד</li>
+                            <li>החזק את התנוחה</li>
+                            <li>שמור על נשימה סדירה</li>
+                        </ol>
+                        <p class="tips">טיפ: שמור על בטן מכווצת ויציבה</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>תוכנית אימון זו נועדה להנחיה בלבד. יש להתייעץ עם מאמן מוסמך לפני תחילת תוכנית אימונים חדשה.</p>
+    </footer>
+</body>
+</html> 
